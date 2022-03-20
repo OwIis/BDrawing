@@ -13,32 +13,44 @@
 
     gtag('config', 'G-2FBDNL4NYQ');
   </script>
-
+  <style>
+    #grid{
+      border:1px solid red;
+      display:grid;
+      grid-template-columns: 200px 1fr ;
+    }
+    #grid > ul{
+      border-right: 1px solid gray;
+    }
+    #grid article{
+      border: 1px solid purple;
+    }
+  </style>
 </head>
 <body>
 
   <style> a{color:green;text-decoration:none}
           h1{font-size: 45px; text-align: center;}
   </style>
-
   <h1>
     <a href="index.html">BDrawing</a>
   </h1>
-    <ul>
-      <li>
-        <a href="BDrawing.html">BDrawing?</a>
-      </li>
-      <li>
-        <a href="Drawing.html">Drawing</a>
-      </li>
-        <ul>
-            <li>
-              <a href="sketch.html">sketch</a>
-            </li>
-            <li>
-              <a href="complete.html">complete</a>
-            </li>
-        </ul>
+  <div id="grid">
+    <ul style="list-style:none">
+        <li>
+          <a href="BDrawing.html">BDrawing?</a>
+        </li>
+        <li>
+          <a href="Drawing.html">Drawing</a>
+        </li>
+          <ul style="list-style:none">
+              <li>
+                <a href="sketch.html">sketch</a>
+              </li>
+              <li>
+                <a href="complete.html">complete</a>
+              </li>
+          </ul>
       <li>
         <a href="Diary.html">Diary</a>
       </li>
@@ -46,6 +58,8 @@
         <a href="Blueprint.html">Blueprint</a>
       </li>
     </ul>
+
+<div id="article">
   <p align="center">천방지축어리둥절빙글빙글 돌아가는
                 <br>일상 속에서 녹아 내려오는 그림 한 방울!
   <p align="center">
@@ -57,10 +71,10 @@
     p { font-size: 1em; }
     h1 { font-size: 1.5em; }
   </style>
-
-
-
-  <div id="lv-container" data-id="city" data-uid="MTAyMC81NDcwOC8zMTE3OQ==">
+</div>
+</div>
+<!--채팅기능이었나-->
+<div id="lv-container" data-id="city" data-uid="MTAyMC81NDcwOC8zMTE3OQ==">
   	<script type="text/javascript">
      (function(d, s) {
          var j, e = d.getElementsByTagName(s)[0];
